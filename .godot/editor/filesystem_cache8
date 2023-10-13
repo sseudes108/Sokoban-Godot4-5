@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1697197383
+::res://::1697199625
 icon.png::CompressedTexture2D::3736075626796655125::1697197383::1697197383::1::::<><>::
 README.md::TextFile::-1::1697196625::0::1::::<><>::
 ::res://assets/::1697197383
@@ -16,3 +16,12 @@ player-idle.png::CompressedTexture2D::2189539512632749708::1697197383::169719738
 Purple.png::CompressedTexture2D::3655988023888515059::1697197383::1697197383::1::::<><>::
 spritesheet.png::CompressedTexture2D::4978936927717443447::1697197383::1697197383::1::::<><>::
 yellow_button00.png::CompressedTexture2D::7672593977895040273::1697197383::1697197383::1::::<><>::
+::res://Data/::1697199595
+LevelData.json::JSON::-1::1697199575::0::1::::<><>::
+::res://Project/::1697198822
+::res://Project/Level/::1697199299
+level.tscn::PackedScene::6054291880684607219::1697199299::0::1::::<><>::uid://cc63mmrr5qfbb::::res://assets/spritesheet.png<>uid://crthtgk10waiv::::res://Project/Player/Player.tscn
+::res://Project/Player/::1697199005
+Player.tscn::PackedScene::6005734167397186085::1697199005::0::1::::<><>::uid://6gvnpvtetpke::::res://assets/player-idle.png
+::res://Singletons/::1697199634
+LevelData.gd::GDScript::-1::1697199634::0::1::::<>Node<>::
