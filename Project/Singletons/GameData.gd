@@ -1,6 +1,6 @@
 extends Node
 
-const LEVEL_DATA_PATH: String = "res://Data/LevelData.json"
+const LEVEL_DATA_PATH: String = "res://Project/Data/LevelData.json"
 const TILE_SIZE: int = 32
 
 var leveldata: Dictionary = {}

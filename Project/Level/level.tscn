@@ -45,17 +45,23 @@ layer_2/y_sort_enabled = false
 layer_2/y_sort_origin = 0
 layer_2/z_index = 0
 layer_2/tile_data = PackedInt32Array(393230, 589824, 0, 458767, 589824, 0)
-layer_3/name = "Boxes"
+layer_3/name = "TargetBoxes"
 layer_3/enabled = true
 layer_3/modulate = Color(1, 1, 1, 1)
 layer_3/y_sort_enabled = false
 layer_3/y_sort_origin = 0
 layer_3/z_index = 0
-layer_3/tile_data = PackedInt32Array(393228, 65536, 0, 458764, 65536, 0, 393230, 0, 0)
+layer_3/tile_data = PackedInt32Array()
+layer_4/name = "Boxes"
+layer_4/enabled = true
+layer_4/modulate = Color(1, 1, 1, 1)
+layer_4/y_sort_enabled = false
+layer_4/y_sort_origin = 0
+layer_4/z_index = 0
+layer_4/tile_data = PackedInt32Array(393228, 65536, 0, 458764, 65536, 0, 393230, 0, 0)
 
 [node name="Player" parent="." instance=ExtResource("2_sptl6")]
 position = Vector2(464, 236)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(450, 219)
-zoom = Vector2(2, 2)
