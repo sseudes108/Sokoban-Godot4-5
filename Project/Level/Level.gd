@@ -4,6 +4,12 @@ extends Node2D
 @onready var player = $Finn
 @onready var camera = $Camera2D
 
+@onready var customTargets = $CustomTargets
+
+
+var targetTile: PackedScene = preload("res://Project/Target/Target.tscn")
+var targets
+
 const FLOOR_LAYER = 0
 const WALL_LAYER = 1
 const TARGET_LAYER = 2
@@ -51,6 +57,12 @@ func _process(delta):
 	
 	if Input.is_action_just_pressed("reload"):
 		movesMade = 0
+		
+		##Remove Custom Tiles before setup the lvl again
+		var ct = customTargets.get_children()
+		for i in ct:
+			i.queue_free()
+		
 		SetUpLevel()
 	
 	if direction != Vector2i.ZERO:
@@ -66,6 +78,38 @@ func GetPlayerCurrentTile() -> Vector2i:
 
 ## Check cell the player is trying to move to
 
+#########################################################################################
+#Custom target replacer
+func SetCustomTargets():
+	targets = tileMap.get_used_cells(TARGET_LAYER)
+	
+	#tileMap.clear_layer(TARGET_LAYER)
+	
+	for i in targets:
+		var target = targetTile.instantiate()
+		customTargets.add_child(target)
+		target.position = Vector2(i.x * GameData.TILE_SIZE,i.y * GameData.TILE_SIZE)
+
+func HideCustomTargets(dest: Vector2i):
+	var bxCoords
+	var ctCoords
+	var hideTarget = false
+	var customTargetsSeted = customTargets.get_children()
+	var allBoxes = tileMap.get_used_cells(BOX_LAYER)
+	
+	for ct in customTargetsSeted:
+		var ctPosition = ct.position
+		ctCoords = Vector2i(ct.position.x / GameData.TILE_SIZE, ct.position.y / GameData.TILE_SIZE)
+		
+		if hideTarget == true:
+			ct.hide()
+			print("0")
+		else:
+			ct.show()
+			#print("1")
+			
+###########################################################################
+
 func MoveBox(boxTile: Vector2i, direction: Vector2i):
 	var dest = boxTile + direction
 	
@@ -74,6 +118,9 @@ func MoveBox(boxTile: Vector2i, direction: Vector2i):
 	if dest in tileMap.get_used_cells(TARGET_LAYER):
 		tileMap.set_cell(BOX_LAYER,dest,SOURCE_ID,
 		GetAtlasCordForLayerName(LAYER_KEY_TARGET_BOXES))
+		#############################
+		HideCustomTargets(dest)
+		#############################
 	else:
 		tileMap.set_cell(BOX_LAYER,dest,SOURCE_ID, 
 		GetAtlasCordForLayerName(LAYER_KEY_BOXES))
@@ -154,7 +201,7 @@ func AddLayerTiles(layerTiles, layerName: String):
 
 func SetUpLevel():
 	tileMap.clear()
-	var levelData = GameData.GetLevelData("6")
+	var levelData = GameData.GetLevelData("19")
 	var levelTiles = levelData.tiles
 	var playerStart = levelData.player_start
 	
@@ -162,12 +209,15 @@ func SetUpLevel():
 		AddLayerTiles(levelTiles[layerName], layerName)
 	
 	SetPlayerOnTile(Vector2i(playerStart.x,playerStart.y))
+	#############################
+	SetCustomTargets()
+	#############################
 	MoveCamera()
 
 func MoveCamera():
 	#Used tile rectangle
 	var tileRectangle = tileMap.get_used_rect()
-	
+
 	var tileRecStartX = tileRectangle.position.x * GameData.TILE_SIZE
 	var tileRecEndX = tileRectangle.size.x * GameData.TILE_SIZE + tileRecStartX
 	

@@ -66,3 +66,5 @@ layer_4/tile_data = PackedInt32Array(393228, 65536, 0, 458764, 65536, 0, 393230,
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(439, 210)
 zoom = Vector2(1.99, 1.99)
+
+[node name="CustomTargets" type="Node" parent="."]
