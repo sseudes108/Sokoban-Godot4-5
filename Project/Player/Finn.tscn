@@ -74,8 +74,9 @@ animations = [{
 }]
 
 [node name="Finn" type="AnimatedSprite2D"]
+z_index = 1
 scale = Vector2(1.5, 1.5)
 sprite_frames = SubResource("SpriteFrames_t2scr")
 autoplay = "default"
 frame_progress = 0.482148
-offset = Vector2(12, 12)
+offset = Vector2(8, 12)

@@ -26,8 +26,7 @@ sources/0 = SubResource("TileSetAtlasSource_js104")
 script = ExtResource("1_keb0d")
 
 [node name="Finn" parent="." instance=ExtResource("3_3por0")]
-z_index = 1
-position = Vector2(1, -1)
+offset = Vector2(10, 11)
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_f23e2")
@@ -53,7 +52,7 @@ layer_3/enabled = true
 layer_3/modulate = Color(1, 1, 1, 1)
 layer_3/y_sort_enabled = false
 layer_3/y_sort_origin = 0
-layer_3/z_index = 0
+layer_3/z_index = 2
 layer_3/tile_data = PackedInt32Array()
 layer_4/name = "Boxes"
 layer_4/enabled = true

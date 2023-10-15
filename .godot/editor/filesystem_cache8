@@ -1,8 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1697380237
+::res://::1697405368
 icon.png::CompressedTexture2D::3736075626796655125::1697197383::1697197383::1::::<><>::
 README.md::TextFile::-1::1697196625::0::1::::<><>::
-::res://assets/::1697380062
+::res://assets/::1697380239
 blue_button00.png::CompressedTexture2D::6361833698241254028::1697197383::1697197383::1::::<><>::
 blue_panel.png::CompressedTexture2D::160294828681131675::1697197383::1697197383::1::::<><>::
 gemunu-libre-v8-latin-700.ttf::FontFile::6700650245044689567::1697197383::1697197383::1::::<><>::
@@ -25,13 +25,13 @@ Pixel Holy Spell Effect 02.png::CompressedTexture2D::3218682569996255640::168660
 ::res://Project/::1697376656
 ::res://Project/Data/::1697312418
 LevelData.json::JSON::-1::1697199575::0::1::::<><>::
-::res://Project/Level/::1697380127
-Level.gd::GDScript::-1::1697380028::0::1::::<>Node2D<>::
-level.tscn::PackedScene::6054291880684607219::1697380127::0::1::::<><>::uid://cc63mmrr5qfbb::::res://assets/spritesheet.png<>res://Project/Level/Level.gd<>uid://bsuydwem5t8ut::::res://Project/Player/Finn.tscn
-::res://Project/Player/::1697380096
-Finn.tscn::PackedScene::3692571151746010935::1697380096::0::1::::<><>::uid://dqobcfrgg5jve::::res://assets/Custom Assets/FinnSpriteSheet.png
-Fox.tscn::PackedScene::6005734167397186085::1697380096::0::1::::<><>::uid://6gvnpvtetpke::::res://assets/player-idle.png
+::res://Project/Level/::1697389028
+Level.gd::GDScript::-1::1697389025::0::1::::<>Node2D<>::
+level.tscn::PackedScene::6054291880684607219::1697389028::0::1::::<><>::uid://cc63mmrr5qfbb::::res://assets/spritesheet.png<>res://Project/Level/Level.gd<>uid://bsuydwem5t8ut::::res://Project/Player/Finn.tscn
+::res://Project/Player/::1697389028
+Finn.tscn::PackedScene::3692571151746010935::1697389028::0::1::::<><>::uid://dqobcfrgg5jve::::res://assets/Custom Assets/FinnSpriteSheet.png
+Fox.tscn::PackedScene::6005734167397186085::1697389028::0::1::::<><>::uid://6gvnpvtetpke::::res://assets/player-idle.png
 ::res://Project/Singletons/::1697206531
 GameData.gd::GDScript::-1::1697206531::0::1::::<>Node<>::
-::res://Project/Target/::1697380096
-Target.tscn::PackedScene::6538965122612613518::1697380096::0::1::::<><>::uid://bl4fh42whck4w::::res://assets/Custom Assets/Pixel Holy Spell Effect 02.png
+::res://Project/Target/::1697389497
+Target.tscn::PackedScene::6538965122612613518::1697389497::0::1::::<><>::uid://bl4fh42whck4w::::res://assets/Custom Assets/Pixel Holy Spell Effect 02.png
