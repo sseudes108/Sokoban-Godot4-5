@@ -1,7 +1,3 @@
-res://Project/Target/Target.tscn
-res://Project/Level/Level.gd
-res://Project/Level/level.tscn
-res://Project/Player/Fox.tscn
-res://Project/Player/Finn.tscn
-res://Project/Singletons/SignalManager.gd
 res://LevelButton/LevelButton.tscn
+res://Project/Level/level.tscn
+res://Project/Level/Level.gd

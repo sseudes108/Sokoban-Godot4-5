@@ -1,8 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1697405368
+::res://::1697411326
 icon.png::CompressedTexture2D::3736075626796655125::1697197383::1697197383::1::::<><>::
 README.md::TextFile::-1::1697196625::0::1::::<><>::
-::res://assets/::1697380239
+::res://assets/::1697410981
 blue_button00.png::CompressedTexture2D::6361833698241254028::1697197383::1697197383::1::::<><>::
 blue_panel.png::CompressedTexture2D::160294828681131675::1697197383::1697197383::1::::<><>::
 gemunu-libre-v8-latin-700.ttf::FontFile::6700650245044689567::1697197383::1697197383::1::::<><>::
@@ -14,24 +14,28 @@ LuckiestGuy-Regular.ttf::FontFile::3118844723775323565::1697197383::1697197383::
 panel_beigeLight.png::CompressedTexture2D::8680050297244247157::1697197383::1697197383::1::::<><>::
 player-idle.png::CompressedTexture2D::2189539512632749708::1697197383::1697197383::1::::<><>::
 Purple.png::CompressedTexture2D::3655988023888515059::1697197383::1697197383::1::::<><>::
+spritesheet2.png::CompressedTexture2D::1999667363052180277::1697380088::1697410981::1::::<><>::
 spritesheet - Copy.png::CompressedTexture2D::8110705504810500062::1697197383::1697380062::1::::<><>::
-spritesheet.png::CompressedTexture2D::4978936927717443447::1697380088::1697380239::1::::<><>::
+spritesheet.png::CompressedTexture2D::4978936927717443447::1697411297::1697411328::1::::<><>::
 yellow_button00.png::CompressedTexture2D::7672593977895040273::1697197383::1697197383::1::::<><>::
 ::res://assets/Custom Assets/::1697376851
 CustomTileSet.png::CompressedTexture2D::7343992108794156183::1697332887::1697332949::1::::<><>::
 FinnSpriteSheet.png::CompressedTexture2D::8311249415585481026::1697329468::1697329514::1::::<><>::
 Pixel Holy Spell Effect 01.png::CompressedTexture2D::6114200639981011729::1686606913::1697376851::1::::<><>::
 Pixel Holy Spell Effect 02.png::CompressedTexture2D::3218682569996255640::1686607011::1697376851::1::::<><>::
+::res://LevelButton/::1697411005
+LevelButton.tscn::PackedScene::7185790761754889241::1697411005::0::1::::<><>::uid://cjwbdp2le2q6::::res://assets/blue_panel.png<>uid://c2p3y3r42i6gh::::res://assets/gemunu-libre-v8-latin-700.ttf<>uid://5yajhqy6y0b2::::res://assets/green_checkmark.png
 ::res://Project/::1697376656
 ::res://Project/Data/::1697312418
 LevelData.json::JSON::-1::1697199575::0::1::::<><>::
-::res://Project/Level/::1697389028
-Level.gd::GDScript::-1::1697389025::0::1::::<>Node2D<>::
-level.tscn::PackedScene::6054291880684607219::1697389028::0::1::::<><>::uid://cc63mmrr5qfbb::::res://assets/spritesheet.png<>res://Project/Level/Level.gd<>uid://bsuydwem5t8ut::::res://Project/Player/Finn.tscn
-::res://Project/Player/::1697389028
-Finn.tscn::PackedScene::3692571151746010935::1697389028::0::1::::<><>::uid://dqobcfrgg5jve::::res://assets/Custom Assets/FinnSpriteSheet.png
-Fox.tscn::PackedScene::6005734167397186085::1697389028::0::1::::<><>::uid://6gvnpvtetpke::::res://assets/player-idle.png
-::res://Project/Singletons/::1697206531
+::res://Project/Level/::1697411006
+Level.gd::GDScript::-1::1697408643::0::1::::<>Node2D<>::
+level.tscn::PackedScene::6054291880684607219::1697411006::0::1::::<><>::uid://cc63mmrr5qfbb::::res://assets/spritesheet.png<>res://Project/Level/Level.gd<>uid://bsuydwem5t8ut::::res://Project/Player/Finn.tscn
+::res://Project/Player/::1697408625
+Finn.tscn::PackedScene::3692571151746010935::1697408625::0::1::::<><>::uid://dqobcfrgg5jve
+Fox.tscn::PackedScene::6005734167397186085::1697408625::0::1::::<><>::uid://6gvnpvtetpke
+::res://Project/Singletons/::1697408686
 GameData.gd::GDScript::-1::1697206531::0::1::::<>Node<>::
-::res://Project/Target/::1697389497
-Target.tscn::PackedScene::6538965122612613518::1697389497::0::1::::<><>::uid://bl4fh42whck4w::::res://assets/Custom Assets/Pixel Holy Spell Effect 02.png
+SignalManager.gd::GDScript::-1::1697408686::0::1::::<>Node<>::
+::res://Project/Target/::1697408625
+Target.tscn::PackedScene::6538965122612613518::1697408625::0::1::::<><>::uid://bl4fh42whck4w

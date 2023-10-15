@@ -32,7 +32,7 @@ const LAYER_MAP = {
 var isMoving: bool = false
 var movesMade: int = 0
 
-var selectedLevel: int = 1
+var selectedLevel: int = 7
 
 func _ready():
 	SetUpLevel()
