@@ -2,10 +2,9 @@
 
 [ext_resource type="Texture2D" uid="uid://cc63mmrr5qfbb" path="res://assets/spritesheet.png" id="1_15oh4"]
 [ext_resource type="Script" path="res://Project/Level/Level.gd" id="1_keb0d"]
-[ext_resource type="PackedScene" uid="uid://crthtgk10waiv" path="res://Project/Player/Player.tscn" id="2_sptl6"]
+[ext_resource type="PackedScene" uid="uid://bsuydwem5t8ut" path="res://Project/Player/Finn.tscn" id="3_3por0"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vcinx"]
-resource_name = "LevelTiles"
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_js104"]
 texture = ExtResource("1_15oh4")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
@@ -21,10 +20,14 @@ texture_region_size = Vector2i(32, 32)
 
 [sub_resource type="TileSet" id="TileSet_f23e2"]
 tile_size = Vector2i(32, 32)
-sources/0 = SubResource("TileSetAtlasSource_vcinx")
+sources/0 = SubResource("TileSetAtlasSource_js104")
 
 [node name="Level" type="Node2D"]
 script = ExtResource("1_keb0d")
+
+[node name="Finn" parent="." instance=ExtResource("3_3por0")]
+z_index = 1
+position = Vector2(1, -1)
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_f23e2")
@@ -60,8 +63,6 @@ layer_4/y_sort_origin = 0
 layer_4/z_index = 0
 layer_4/tile_data = PackedInt32Array(393228, 65536, 0, 458764, 65536, 0, 393230, 0, 0)
 
-[node name="Player" parent="." instance=ExtResource("2_sptl6")]
-position = Vector2(464, 236)
-
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(450, 219)
+position = Vector2(439, 210)
+zoom = Vector2(1.99, 1.99)

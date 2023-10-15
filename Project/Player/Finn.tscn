@@ -1,0 +1,81 @@
+[gd_scene load_steps=12 format=3 uid="uid://bsuydwem5t8ut"]
+
+[ext_resource type="Texture2D" uid="uid://dqobcfrgg5jve" path="res://assets/Custom Assets/FinnSpriteSheet.png" id="1_h4m44"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t0400"]
+atlas = ExtResource("1_h4m44")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d155q"]
+atlas = ExtResource("1_h4m44")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yiy25"]
+atlas = ExtResource("1_h4m44")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f3xc3"]
+atlas = ExtResource("1_h4m44")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7d86e"]
+atlas = ExtResource("1_h4m44")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8nuqp"]
+atlas = ExtResource("1_h4m44")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ycj83"]
+atlas = ExtResource("1_h4m44")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lo2jp"]
+atlas = ExtResource("1_h4m44")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tj2fw"]
+atlas = ExtResource("1_h4m44")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_t2scr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t0400")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d155q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yiy25")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f3xc3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7d86e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8nuqp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ycj83")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lo2jp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tj2fw")
+}],
+"loop": true,
+"name": &"default",
+"speed": 7.0
+}]
+
+[node name="Finn" type="AnimatedSprite2D"]
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_t2scr")
+autoplay = "default"
+frame_progress = 0.482148
+offset = Vector2(12, 12)

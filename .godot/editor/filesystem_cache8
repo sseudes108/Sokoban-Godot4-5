@@ -1,10 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1697312400
+::res://::1697329566
 icon.png::CompressedTexture2D::3736075626796655125::1697197383::1697197383::1::::<><>::
 README.md::TextFile::-1::1697196625::0::1::::<><>::
-::res://assets/::1697197383
+::res://assets/::1697333080
 blue_button00.png::CompressedTexture2D::6361833698241254028::1697197383::1697197383::1::::<><>::
 blue_panel.png::CompressedTexture2D::160294828681131675::1697197383::1697197383::1::::<><>::
+CustomTileSet.png::CompressedTexture2D::4562878049195407916::1697333100::1697333103::1::::<><>::
 gemunu-libre-v8-latin-700.ttf::FontFile::6700650245044689567::1697197383::1697197383::1::::<><>::
 Gray.png::CompressedTexture2D::7937226877202113020::1697197383::1697197383::1::::<><>::
 green_button00.png::CompressedTexture2D::4223284371627439628::1697197383::1697197383::1::::<><>::
@@ -16,12 +17,17 @@ player-idle.png::CompressedTexture2D::2189539512632749708::1697197383::169719738
 Purple.png::CompressedTexture2D::3655988023888515059::1697197383::1697197383::1::::<><>::
 spritesheet.png::CompressedTexture2D::4978936927717443447::1697197383::1697197383::1::::<><>::
 yellow_button00.png::CompressedTexture2D::7672593977895040273::1697197383::1697197383::1::::<><>::
+::res://assets/Custom Assets/::1697332949
+CustomTileSet.png::CompressedTexture2D::7343992108794156183::1697332887::1697332949::1::::<><>::
+FinnSpriteSheet.png::CompressedTexture2D::8311249415585481026::1697329468::1697329514::1::::<><>::
 ::res://Project/::1697202083
-::res://Project/Data/::1697312345
-::res://Project/Level/::1697311845
-Level.gd::GDScript::-1::1697311845::0::1::::<>Node2D<>::
-level.tscn::PackedScene::6054291880684607219::1697311845::0::1::::<><>::uid://cc63mmrr5qfbb::::res://assets/spritesheet.png<>res://Project/Level/Level.gd<>uid://crthtgk10waiv::::res://Project/Player/Player.tscn
-::res://Project/Player/::1697311525
-Player.tscn::PackedScene::6005734167397186085::1697311525::0::1::::<><>::uid://6gvnpvtetpke::::res://assets/player-idle.png
+::res://Project/Data/::1697312418
+LevelData.json::JSON::-1::1697199575::0::1::::<><>::
+::res://Project/Level/::1697333019
+Level.gd::GDScript::-1::1697329643::0::1::::<>Node2D<>::
+level.tscn::PackedScene::6054291880684607219::1697333019::0::1::::<><>::res://Project/Level/Level.gd<>uid://bsuydwem5t8ut::::res://Project/Player/Finn.tscn<>uid://b6aj61wm4ot6c::::res://assets/CustomTileSet.png
+::res://Project/Player/::1697333019
+Fox.tscn::PackedScene::6005734167397186085::1697333019::0::1::::<><>::uid://6gvnpvtetpke::::res://assets/player-idle.png
+Finn.tscn::PackedScene::3692571151746010935::1697333019::0::1::::<><>::uid://dqobcfrgg5jve::::res://assets/Custom Assets/FinnSpriteSheet.png
 ::res://Project/Singletons/::1697206531
 GameData.gd::GDScript::-1::1697206531::0::1::::<>Node<>::

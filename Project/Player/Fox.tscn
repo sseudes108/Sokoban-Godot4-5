@@ -1,21 +1,21 @@
 [gd_scene load_steps=7 format=3 uid="uid://crthtgk10waiv"]
 
-[ext_resource type="Texture2D" uid="uid://6gvnpvtetpke" path="res://assets/player-idle.png" id="1_y7i5b"]
+[ext_resource type="Texture2D" uid="uid://6gvnpvtetpke" path="res://assets/player-idle.png" id="1_7nasi"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uh105"]
-atlas = ExtResource("1_y7i5b")
+atlas = ExtResource("1_7nasi")
 region = Rect2(0, 0, 33, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_oc2ko"]
-atlas = ExtResource("1_y7i5b")
+atlas = ExtResource("1_7nasi")
 region = Rect2(33, 0, 33, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a7kxr"]
-atlas = ExtResource("1_y7i5b")
+atlas = ExtResource("1_7nasi")
 region = Rect2(66, 0, 33, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mpwfs"]
-atlas = ExtResource("1_y7i5b")
+atlas = ExtResource("1_7nasi")
 region = Rect2(99, 0, 33, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_jjlp7"]
@@ -38,8 +38,9 @@ animations = [{
 "speed": 9.0
 }]
 
-[node name="Player" type="AnimatedSprite2D"]
+[node name="Fox" type="AnimatedSprite2D"]
 sprite_frames = SubResource("SpriteFrames_jjlp7")
 animation = &"Idle"
 autoplay = "Idle"
 frame_progress = 0.526234
+offset = Vector2(18, 12)
