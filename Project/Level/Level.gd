@@ -8,10 +8,17 @@ extends Node2D
 var targetTile: PackedScene = preload("res://Project/Target/Target.tscn")
 var targets
 
+@onready var hud = $CanvasLayer/HUD
+
 const FLOOR_LAYER = 0
 const WALL_LAYER = 1
 const TARGET_LAYER = 2
 const BOX_LAYER = 3
+
+###########
+const BACKGROUND_LAYER = 5
+const PROPS_LAYER = 6
+###########
 
 const SOURCE_ID = 0
 
@@ -26,7 +33,8 @@ const LAYER_MAP = {
 	LAYER_KEY_WALLS: WALL_LAYER,
 	LAYER_KEY_TARGETS: TARGET_LAYER,
 	LAYER_KEY_TARGET_BOXES: BOX_LAYER,
-	LAYER_KEY_BOXES: BOX_LAYER
+	LAYER_KEY_BOXES: BOX_LAYER,
+
 }
 
 var isMoving: bool = false
@@ -41,6 +49,8 @@ func _process(delta):
 	
 	if Input.is_action_just_pressed("quit"):
 		GameManager.LoadMainScene()
+	
+	hud.SetMovesMade(movesMade)
 	
 	if isMoving == true:
 		return
@@ -60,11 +70,10 @@ func _process(delta):
 	
 	if Input.is_action_just_pressed("reload"):
 		movesMade = 0
-		
 		##Remove Custom Tiles before setup the lvl again
 		for ct in customTargets.get_children():
 			ct.queue_free()
-		
+			
 		SetUpLevel()
 	
 	if direction != Vector2i.ZERO:
@@ -97,6 +106,7 @@ func CheckGameState():
 	for i in tileMap.get_used_cells(TARGET_LAYER):
 		if cellIsBox(i) == false:
 			return
+	SignalManager.GameOver.emit()
 	print("Game Over")
 
 func MoveBox(boxTile: Vector2i, direction: Vector2i):
@@ -143,6 +153,9 @@ func MovePlayer(direction: Vector2i):
 	
 	if canMove:
 		movesMade +=1
+		
+		hud.SetMovesMade(movesMade)
+		
 		if boxSeen:
 			MoveBox(newPlayerTile,direction)
 		
@@ -163,11 +176,11 @@ func SetPlayerOnTile(tileCoord: Vector2i):
 func GetAtlasCordForLayerName(layerName: String) -> Vector2i:
 	match layerName:
 		LAYER_KEY_FLOOR:
-			return Vector2i(randi_range(3,8),0)
+			return Vector2i(randi_range(7,11),0)
 		LAYER_KEY_WALLS:
-			return Vector2i(2,0)
+			return Vector2i(randi_range(4,6),0)
 		LAYER_KEY_TARGETS:
-			return Vector2i(9,0)
+			return Vector2i(12,0)
 		LAYER_KEY_TARGET_BOXES:
 			return Vector2i(0,0)
 		LAYER_KEY_BOXES:
@@ -187,7 +200,10 @@ func AddLayerTiles(layerTiles, layerName: String):
 
 func SetUpLevel():
 	tileMap.clear()
-	var levelData = GameData.GetLevelData(GameManager.GetSelectedLevel())
+
+	var lvlNum = GameManager.GetSelectedLevel()
+	var levelData = GameData.GetLevelData(lvlNum)
+	
 	var levelTiles = levelData.tiles
 	var playerStart = levelData.player_start
 	
@@ -199,6 +215,7 @@ func SetUpLevel():
 	SetCustomTargets()
 	#############################
 	MoveCamera()
+	hud.SetLevelNumber(lvlNum)
 
 func MoveCamera():
 	#Used tile rectangle

@@ -1,0 +1,72 @@
+[gd_scene load_steps=3 format=3 uid="uid://deb4xmbylgakw"]
+
+[ext_resource type="Script" path="res://Project/HUD/Hud.gd" id="1_48h5f"]
+[ext_resource type="LabelSettings" uid="uid://dn8uh8uu6jvd0" path="res://Project/HUD/HUD.tres" id="1_ytxtv"]
+
+[node name="HUD" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_48h5f")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+
+[node name="Labels HBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="level VBoxContainer" type="HBoxContainer" parent="MarginContainer/Labels HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/Labels HBoxContainer/level VBoxContainer"]
+custom_minimum_size = Vector2(99, 0)
+layout_mode = 2
+text = "Level"
+label_settings = ExtResource("1_ytxtv")
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="MarginContainer/Labels HBoxContainer/level VBoxContainer"]
+layout_mode = 2
+text = "99"
+label_settings = ExtResource("1_ytxtv")
+vertical_alignment = 1
+
+[node name="Moves VBoxContainer2" type="HBoxContainer" parent="MarginContainer/Labels HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/Labels HBoxContainer/Moves VBoxContainer2"]
+custom_minimum_size = Vector2(99, 0)
+layout_mode = 2
+text = "Moves"
+label_settings = ExtResource("1_ytxtv")
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="MarginContainer/Labels HBoxContainer/Moves VBoxContainer2"]
+layout_mode = 2
+text = "99"
+label_settings = ExtResource("1_ytxtv")
+vertical_alignment = 1
+
+[node name="Best VBoxContainer3" type="HBoxContainer" parent="MarginContainer/Labels HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/Labels HBoxContainer/Best VBoxContainer3"]
+custom_minimum_size = Vector2(99, 0)
+layout_mode = 2
+text = "Best"
+label_settings = ExtResource("1_ytxtv")
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="MarginContainer/Labels HBoxContainer/Best VBoxContainer3"]
+layout_mode = 2
+text = "99"
+label_settings = ExtResource("1_ytxtv")
+vertical_alignment = 1

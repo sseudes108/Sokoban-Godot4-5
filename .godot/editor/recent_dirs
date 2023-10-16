@@ -1,3 +1,5 @@
+res://assets
+res://Project/HUD
 res://Project/Singletons
 res://Project/Main
 res://Project/LevelButton
@@ -5,6 +7,5 @@ res://Project
 res://assets/Custom Assets
 res://Project/Target
 res://Project/Player
-res://assets
 res://Project/Level
 res://
