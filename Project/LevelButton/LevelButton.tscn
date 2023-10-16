@@ -1,15 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://dam36oepw8hm4"]
 
-[ext_resource type="Texture2D" uid="uid://cjwbdp2le2q6" path="res://assets/blue_panel.png" id="1_r56e6"]
-[ext_resource type="FontFile" uid="uid://c2p3y3r42i6gh" path="res://assets/gemunu-libre-v8-latin-700.ttf" id="2_odjvv"]
-[ext_resource type="Texture2D" uid="uid://5yajhqy6y0b2" path="res://assets/green_checkmark.png" id="3_khrpf"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_byf4d"]
-line_spacing = 32.0
-font = ExtResource("2_odjvv")
-font_size = 33
-outline_size = 5
-outline_color = Color(0, 0, 0, 1)
+[ext_resource type="Texture2D" uid="uid://cjwbdp2le2q6" path="res://assets/blue_panel.png" id="1_fii6o"]
+[ext_resource type="Script" path="res://Project/LevelButton/LevelButton.gd" id="2_0ijsq"]
+[ext_resource type="LabelSettings" uid="uid://b3gvn2wr4mnyx" path="res://Project/LevelButton/LevelButton.tres" id="3_yx8rk"]
+[ext_resource type="Texture2D" uid="uid://5yajhqy6y0b2" path="res://assets/green_checkmark.png" id="4_nve1k"]
 
 [node name="LevelButton" type="NinePatchRect"]
 custom_minimum_size = Vector2(64, 64)
@@ -17,11 +11,13 @@ offset_right = 64.0
 offset_bottom = 64.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource("1_r56e6")
+mouse_filter = 0
+texture = ExtResource("1_fii6o")
 patch_margin_left = 10
 patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
+script = ExtResource("2_0ijsq")
 
 [node name="levelLabel" type="Label" parent="."]
 layout_mode = 1
@@ -31,16 +27,19 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "99"
-label_settings = SubResource("LabelSettings_byf4d")
+label_settings = ExtResource("3_yx8rk")
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Checkmark" type="TextureRect" parent="."]
+visible = false
 layout_mode = 0
 offset_left = 3.0
 offset_top = 3.0
 offset_right = 43.0
 offset_bottom = 43.0
 scale = Vector2(0.4, 0.4)
-texture = ExtResource("3_khrpf")
+texture = ExtResource("4_nve1k")
 stretch_mode = 4
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]

@@ -32,12 +32,15 @@ const LAYER_MAP = {
 var isMoving: bool = false
 var movesMade: int = 0
 
-var selectedLevel: int = 7
+var selectedLevel: int = 11
 
 func _ready():
 	SetUpLevel()
 
 func _process(delta):
+	
+	if Input.is_action_just_pressed("quit"):
+		GameManager.LoadMainScene()
 	
 	if isMoving == true:
 		return
@@ -184,7 +187,7 @@ func AddLayerTiles(layerTiles, layerName: String):
 
 func SetUpLevel():
 	tileMap.clear()
-	var levelData = GameData.GetLevelData(str(selectedLevel))
+	var levelData = GameData.GetLevelData(GameManager.GetSelectedLevel())
 	var levelTiles = levelData.tiles
 	var playerStart = levelData.player_start
 	

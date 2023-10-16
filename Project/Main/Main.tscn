@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=3 uid="uid://w1kihlpbejmm"]
+
+[ext_resource type="Script" path="res://Project/Main/Main.gd" id="1_ae6je"]
+[ext_resource type="Texture2D" uid="uid://dlc37446gxmem" path="res://assets/Gray.png" id="1_pccal"]
+[ext_resource type="LabelSettings" uid="uid://dl4n5jcu3i4da" path="res://Project/Main/Main.tres" id="2_6phw0"]
+
+[node name="Main" type="CanvasLayer"]
+script = ExtResource("1_ae6je")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_pccal")
+stretch_mode = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 27
+theme_override_constants/margin_top = 27
+theme_override_constants/margin_right = 27
+theme_override_constants/margin_bottom = 27
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Sokoban(ish)"
+label_settings = ExtResource("2_6phw0")
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="GridContainer" type="GridContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/h_separation = 3
+theme_override_constants/v_separation = 3
+columns = 6

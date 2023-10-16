@@ -1,5 +1,9 @@
-TextureRect
+GridContainer
 Label
+VBoxContainer
+MarginContainer
+TextureRect
+CanvasLayer
 NinePatchRect
 Node
 AnimatedSprite2D
