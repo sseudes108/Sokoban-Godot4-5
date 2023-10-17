@@ -1,5 +1,7 @@
 extends Node2D
 
+@onready var sound = $Sound
+
 @onready var tileMap = $TileMap
 @onready var player = $Finn
 @onready var camera = $Camera2D
@@ -34,7 +36,6 @@ const LAYER_MAP = {
 	LAYER_KEY_TARGETS: TARGET_LAYER,
 	LAYER_KEY_TARGET_BOXES: BOX_LAYER,
 	LAYER_KEY_BOXES: BOX_LAYER,
-
 }
 
 var isMoving: bool = false
@@ -43,6 +44,11 @@ var movesMade: int = 0
 var selectedLevel: int = 11
 
 func _ready():
+	##########################################################
+	var musicToPlay = SoundManager.SOUNDS.keys().pick_random()
+	SoundManager.PlaySound(sound, musicToPlay)
+	##########################################################
+	
 	SetUpLevel()
 
 func _process(delta):
@@ -165,7 +171,7 @@ func MovePlayer(direction: Vector2i):
 
 #######################################
 # TileMap, camera and player placement #
-#######################################
+####################################### 
 func SetPlayerOnTile(tileCoord: Vector2i):
 	var newPos: Vector2 = Vector2(
 		tileCoord.x * GameData.TILE_SIZE,

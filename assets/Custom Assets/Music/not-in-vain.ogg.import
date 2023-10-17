@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cvf2n6knube0f"
+path="res://.godot/imported/not-in-vain.ogg-bec2f9b0a48ce4e412a3d1a1afe8721e.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Custom Assets/Music/not-in-vain.ogg"
+dest_files=["res://.godot/imported/not-in-vain.ogg-bec2f9b0a48ce4e412a3d1a1afe8721e.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -188,3 +188,6 @@ zoom = Vector2(1.99, 1.99)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="HUD" parent="CanvasLayer" instance=ExtResource("4_kmxdh")]
+
+[node name="Sound" type="AudioStreamPlayer" parent="."]
+volume_db = -10.0

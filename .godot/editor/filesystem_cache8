@@ -1,8 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1697486275
+::res://::1697565050
 icon.png::CompressedTexture2D::3736075626796655125::1697197383::1697197383::1::::<><>::
 README.md::TextFile::-1::1697196625::0::1::::<><>::
-::res://assets/::1697490632
+::res://assets/::1697490634
 blue_button00.png::CompressedTexture2D::6361833698241254028::1697197383::1697197383::1::::<><>::
 blue_panel.png::CompressedTexture2D::160294828681131675::1697197383::1697197383::1::::<><>::
 ct2.png::CompressedTexture2D::7025040740361131372::1697490632::1697490634::1::::<><>::
@@ -20,36 +20,56 @@ spritesheet2.png::CompressedTexture2D::1999667363052180277::1697380088::16974109
 spritesheet - Copy.png::CompressedTexture2D::8110705504810500062::1697197383::1697380062::1::::<><>::
 spritesheet.png::CompressedTexture2D::4978936927717443447::1697420461::1697420525::1::::<><>::
 yellow_button00.png::CompressedTexture2D::7672593977895040273::1697197383::1697197383::1::::<><>::
-::res://assets/Custom Assets/::1697376851
+::res://assets/Custom Assets/::1697492589
 CustomTileSet.png::CompressedTexture2D::7343992108794156183::1697332887::1697332949::1::::<><>::
 FinnSpriteSheet.png::CompressedTexture2D::8311249415585481026::1697329468::1697329514::1::::<><>::
 Pixel Holy Spell Effect 01.png::CompressedTexture2D::6114200639981011729::1686606913::1697376851::1::::<><>::
 Pixel Holy Spell Effect 02.png::CompressedTexture2D::3218682569996255640::1686607011::1697376851::1::::<><>::
+::res://assets/Custom Assets/Music/::1697495133
+dancing-with-the-lion.ogg::AudioStreamOggVorbis::2254947485664784671::1614451301::1697495133::1::::<><>::
+groove-de-sim.ogg::AudioStreamOggVorbis::7745373507311047882::1614451301::1697495133::1::::<><>::
+in-the-city.ogg::AudioStreamOggVorbis::356986621865026911::1614451311::1697495133::1::::<><>::
+mahali-pazuri.ogg::AudioStreamOggVorbis::6112644093006000170::1614451320::1697495133::1::::<><>::
+not-in-vain.ogg::AudioStreamOggVorbis::6258793190969969871::1614451335::1697495133::1::::<><>::
+Pixel 1.ogg::AudioStreamOggVorbis::1690763241381233194::1677410623::1697494012::1::::<><>::
+Pixel 2.ogg::AudioStreamOggVorbis::4195281618256252668::1677411913::1697494012::1::::<><>::
+Pixel 3.ogg::AudioStreamOggVorbis::4263282536651015373::1677412972::1697494012::1::::<><>::
+Pixel 4.ogg::AudioStreamOggVorbis::3302534307798505817::1678871648::1697494012::1::::<><>::
+Pixel 5.ogg::AudioStreamOggVorbis::4971302684839071970::1678871843::1697494013::1::::<><>::
+Pixel 6.ogg::AudioStreamOggVorbis::4490222546424631773::1679040246::1697494013::1::::<><>::
+Pixel 7.ogg::AudioStreamOggVorbis::2911839835691259964::1679040334::1697494013::1::::<><>::
+Pixel 8.ogg::AudioStreamOggVorbis::5167980434939576636::1679300702::1697494013::1::::<><>::
+Pixel 9.ogg::AudioStreamOggVorbis::6978671832564545126::1679301189::1697494013::1::::<><>::
+Pixel 10.ogg::AudioStreamOggVorbis::7329598715780614435::1679301271::1697494013::1::::<><>::
+Pixel 11.ogg::AudioStreamOggVorbis::3202137595900952746::1679302389::1697494013::1::::<><>::
+Pixel 12.ogg::AudioStreamOggVorbis::4401920404386721690::1679302626::1697494013::1::::<><>::
+underground-town.ogg::AudioStreamOggVorbis::6277290436865406630::1614451346::1697494576::1::::<><>::
 ::res://Project/::1697463495
 ::res://Project/Data/::1697312418
 LevelData.json::JSON::-1::1697199575::0::1::::<><>::
-::res://Project/HUD/::1697490451
+::res://Project/HUD/::1697495136
 Hud.gd::GDScript::-1::1697466638::0::1::::<>Control<>::
-HUD.tres::LabelSettings::8141070089787516427::1697463886::0::1::::<><>::uid://c2p3y3r42i6gh::::res://assets/gemunu-libre-v8-latin-700.ttf
-Hud.tscn::PackedScene::7443884302365924746::1697490451::0::1::::<><>::res://Project/HUD/Hud.gd<>uid://dn8uh8uu6jvd0::::res://Project/HUD/HUD.tres
-::res://Project/Level/::1697490451
-Level.gd::GDScript::-1::1697488011::0::1::::<>Node2D<>::
-level.tscn::PackedScene::6054291880684607219::1697490451::0::1::::<><>::uid://cc63mmrr5qfbb::::res://assets/spritesheet.png<>res://Project/Level/Level.gd<>uid://bsuydwem5t8ut::::res://Project/Player/Finn.tscn<>uid://bg0j6a4poje0e::::res://assets/ct.png<>uid://deb4xmbylgakw::::res://Project/HUD/Hud.tscn<>res://Project/Level/TileMap2.gd
-TileMap2.gd::GDScript::-1::1697490364::0::1::::<>TileMap<>::
+HUD.tres::LabelSettings::8141070089787516427::1697463886::0::1::::<><>::uid://c2p3y3r42i6gh
+Hud.tscn::PackedScene::7443884302365924746::1697495136::0::1::::<><>::res://Project/HUD/Hud.gd<>uid://dn8uh8uu6jvd0::::res://Project/HUD/HUD.tres
+::res://Project/Level/::1697495835
+Level.gd::GDScript::-1::1697494765::0::1::::<>Node2D<>::
+level.tscn::PackedScene::6054291880684607219::1697495835::0::1::::<><>::uid://cc63mmrr5qfbb::::res://assets/spritesheet.png<>res://Project/Level/Level.gd<>uid://bsuydwem5t8ut::::res://Project/Player/Finn.tscn<>uid://bg0j6a4poje0e::::res://assets/ct.png<>uid://deb4xmbylgakw::::res://Project/HUD/Hud.tscn<>uid://c7c8nogigmm5a::::res://assets/ct2.png<>res://Project/Level/TileMap2.gd
+TileMap2.gd::GDScript::-1::1697491910::0::1::::<>TileMap<>::
 ::res://Project/LevelButton/::1697463684
 LevelButton.gd::GDScript::-1::1697417316::0::1::::<>NinePatchRect<>::
-LevelButton.tres::LabelSettings::4365394297179020363::1697463684::0::1::::<><>::uid://c2p3y3r42i6gh::::res://assets/gemunu-libre-v8-latin-700.ttf
-LevelButton.tscn::PackedScene::7185790761754889241::1697463475::0::1::::<><>::uid://cjwbdp2le2q6::::res://assets/blue_panel.png<>res://Project/LevelButton/LevelButton.gd<>uid://b3gvn2wr4mnyx::::res://Project/LevelButton/LevelButton.tres<>uid://5yajhqy6y0b2::::res://assets/green_checkmark.png
+LevelButton.tres::LabelSettings::4365394297179020363::1697463684::0::1::::<><>::uid://c2p3y3r42i6gh
+LevelButton.tscn::PackedScene::7185790761754889241::1697463475::0::1::::<><>::uid://cjwbdp2le2q6
 ::res://Project/Main/::1697463476
 Main.gd::GDScript::-1::1697417132::0::1::::<>CanvasLayer<>::
 Main.tres::LabelSettings::7992049657434737882::1697415979::0::1::::<><>::uid://bko16f8c141b2
-Main.tscn::PackedScene::1598450223260505752::1697463476::0::1::::<><>::res://Project/Main/Main.gd<>uid://dlc37446gxmem::::res://assets/Gray.png<>uid://dl4n5jcu3i4da::::res://Project/Main/Main.tres
+Main.tscn::PackedScene::1598450223260505752::1697463476::0::1::::<><>::res://Project/Main/Main.gd<>uid://dlc37446gxmem
 ::res://Project/Player/::1697408625
 Finn.tscn::PackedScene::3692571151746010935::1697408625::0::1::::<><>::uid://dqobcfrgg5jve
 Fox.tscn::PackedScene::6005734167397186085::1697408625::0::1::::<><>::uid://6gvnpvtetpke
-::res://Project/Singletons/::1697465681
+::res://Project/Singletons/::1697494691
 GameData.gd::GDScript::-1::1697206531::0::1::::<>Node<>::
 GameManager.gd::GDScript::-1::1697465681::0::1::::<>Node<>::
 SignalManager.gd::GDScript::-1::1697413676::0::1::::<>Node<>::
+SoundManager.gd::GDScript::-1::1697494691::0::1::::<>Node<>::
 ::res://Project/Target/::1697408625
 Target.tscn::PackedScene::6538965122612613518::1697408625::0::1::::<><>::uid://bl4fh42whck4w

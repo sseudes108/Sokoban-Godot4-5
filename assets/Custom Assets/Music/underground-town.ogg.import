@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cvo1b6fvl34ni"
+path="res://.godot/imported/underground-town.ogg-c9dc7dbd84be1f523b920e57fd726993.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Custom Assets/Music/underground-town.ogg"
+dest_files=["res://.godot/imported/underground-town.ogg-c9dc7dbd84be1f523b920e57fd726993.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

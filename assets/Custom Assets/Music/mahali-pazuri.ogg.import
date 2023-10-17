@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ctdamcss21vaw"
+path="res://.godot/imported/mahali-pazuri.ogg-4d3698340d7ab3a6d97367e30e98e744.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Custom Assets/Music/mahali-pazuri.ogg"
+dest_files=["res://.godot/imported/mahali-pazuri.ogg-4d3698340d7ab3a6d97367e30e98e744.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

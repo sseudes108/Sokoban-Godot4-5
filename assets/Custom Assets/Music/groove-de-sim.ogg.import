@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dil6f1ty371gw"
+path="res://.godot/imported/groove-de-sim.ogg-4aa94f6ee4c368cb3bb38dfa6cd4a757.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Custom Assets/Music/groove-de-sim.ogg"
+dest_files=["res://.godot/imported/groove-de-sim.ogg-4aa94f6ee4c368cb3bb38dfa6cd4a757.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
