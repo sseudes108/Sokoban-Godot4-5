@@ -11,6 +11,7 @@ var targetTile: PackedScene = preload("res://Project/Target/Target.tscn")
 var targets
 
 @onready var hud = $CanvasLayer/HUD
+@onready var gameOverUi = $CanvasLayer/GameOverUI
 
 const FLOOR_LAYER = 0
 const WALL_LAYER = 1
@@ -112,8 +113,8 @@ func CheckGameState():
 	for i in tileMap.get_used_cells(TARGET_LAYER):
 		if cellIsBox(i) == false:
 			return
-	SignalManager.GameOver.emit()
-	print("Game Over")
+	gameOverUi.show()
+	hud.hide()
 
 func MoveBox(boxTile: Vector2i, direction: Vector2i):
 	var dest = boxTile + direction

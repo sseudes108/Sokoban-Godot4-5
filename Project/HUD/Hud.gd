@@ -16,7 +16,7 @@ var best: int = 0
 var moves: int = 0
 
 func _ready():
-	SignalManager.GameOver.connect(GameOver)
+	pass
 
 func _process(delta):
 	pass
@@ -29,6 +29,3 @@ func SetMovesMade(moves: int):
 
 func SetBest(best: int):
 	bestNumberLabel.text = str(best)
-
-func GameOver():
-	hide()

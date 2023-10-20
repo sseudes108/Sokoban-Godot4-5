@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://csi0kj7tl7i7d"]
+[gd_scene load_steps=16 format=3 uid="uid://csi0kj7tl7i7d"]
 
 [ext_resource type="Texture2D" uid="uid://cc63mmrr5qfbb" path="res://assets/spritesheet.png" id="1_15oh4"]
 [ext_resource type="Script" path="res://Project/Level/Level.gd" id="1_keb0d"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://deb4xmbylgakw" path="res://Project/HUD/Hud.tscn" id="4_kmxdh"]
 [ext_resource type="Texture2D" uid="uid://c7c8nogigmm5a" path="res://assets/ct2.png" id="5_dcd50"]
 [ext_resource type="Script" path="res://Project/Level/TileMap2.gd" id="5_iv5oc"]
+[ext_resource type="PackedScene" uid="uid://bh1lmjbufo73v" path="res://Project/GameOver/GameOver.tscn" id="8_vob5l"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_js104"]
 texture = ExtResource("1_15oh4")
@@ -188,6 +189,8 @@ zoom = Vector2(1.99, 1.99)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="HUD" parent="CanvasLayer" instance=ExtResource("4_kmxdh")]
+
+[node name="GameOverUI" parent="CanvasLayer" instance=ExtResource("8_vob5l")]
 
 [node name="Sound" type="AudioStreamPlayer" parent="."]
 volume_db = -10.0
