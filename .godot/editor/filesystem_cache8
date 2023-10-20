@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1697806272
+::res://::1697832813
 icon.png::CompressedTexture2D::3736075626796655125::1697197383::1697197383::1::::<><>::
 README.md::TextFile::-1::1697196625::0::1::::<><>::
 ::res://assets/::1697490634
@@ -25,7 +25,7 @@ CustomTileSet.png::CompressedTexture2D::7343992108794156183::1697332887::1697332
 FinnSpriteSheet.png::CompressedTexture2D::8311249415585481026::1697329468::1697329514::1::::<><>::
 Pixel Holy Spell Effect 01.png::CompressedTexture2D::6114200639981011729::1686606913::1697376851::1::::<><>::
 Pixel Holy Spell Effect 02.png::CompressedTexture2D::3218682569996255640::1686607011::1697376851::1::::<><>::
-::res://assets/Custom Assets/Music/::1697806823
+::res://assets/Custom Assets/Music/::1697806839
 a-farming-we-will-go.ogg::AudioStreamOggVorbis::7027574644925329993::1611351096::1697806839::1::::<><>::
 dancing-with-the-lion.ogg::AudioStreamOggVorbis::2254947485664784671::1614451301::1697495133::1::::<><>::
 first-story.ogg::AudioStreamOggVorbis::7019933028915427787::1611351123::1697806839::1::::<><>::
@@ -38,32 +38,32 @@ vibrant.ogg::AudioStreamOggVorbis::4523244955501839321::1611351171::1697806839::
 ::res://Project/::1697569034
 ::res://Project/Data/::1697312418
 LevelData.json::JSON::-1::1697199575::0::1::::<><>::
-::res://Project/GameOver/::1697801135
+::res://Project/GameOver/::1697807243
 GameOver.gd::GDScript::-1::1697801135::0::1::::<>Control<>::
-GameOver.tscn::PackedScene::2932106202383105869::1697801094::0::1::::<><>::uid://bsc8uaouup4f4::::res://assets/Purple.png<>res://Project/GameOver/GameOver.gd<>uid://dvwxfphpvidjh::::res://assets/panel_beigeLight.png<>uid://bko16f8c141b2::::res://assets/LuckiestGuy-Regular.ttf
+GameOver.tscn::PackedScene::2932106202383105869::1697807243::0::1::::<><>::uid://bsc8uaouup4f4::::res://assets/Purple.png<>res://Project/GameOver/GameOver.gd<>uid://dvwxfphpvidjh::::res://assets/panel_beigeLight.png<>uid://bko16f8c141b2::::res://assets/LuckiestGuy-Regular.ttf
 ::res://Project/HUD/::1697800876
 Hud.gd::GDScript::-1::1697800746::0::1::::<>Control<>::
 HUD.tres::LabelSettings::8141070089787516427::1697463886::0::1::::<><>::uid://c2p3y3r42i6gh
-Hud.tscn::PackedScene::7443884302365924746::1697800876::0::1::::<><>::res://Project/HUD/Hud.gd<>uid://dn8uh8uu6jvd0::::res://Project/HUD/HUD.tres
-::res://Project/Level/::1697801135
-Level.gd::GDScript::-1::1697800828::0::1::::<>Node2D<>::
-level.tscn::PackedScene::6054291880684607219::1697801135::0::1::::<><>::uid://cc63mmrr5qfbb::::res://assets/spritesheet.png<>res://Project/Level/Level.gd<>uid://bsuydwem5t8ut::::res://Project/Player/Finn.tscn<>uid://bg0j6a4poje0e::::res://assets/ct.png<>uid://deb4xmbylgakw::::res://Project/HUD/Hud.tscn<>uid://c7c8nogigmm5a::::res://assets/ct2.png<>res://Project/Level/TileMap2.gd<>uid://bh1lmjbufo73v::::res://Project/GameOver/GameOver.tscn
+Hud.tscn::PackedScene::7443884302365924746::1697800876::0::1::::<><>::res://Project/HUD/Hud.gd<>uid://dn8uh8uu6jvd0
+::res://Project/Level/::1697807320
+Level.gd::GDScript::-1::1697807286::0::1::::<>Node2D<>::
+level.tscn::PackedScene::6054291880684607219::1697807320::0::1::::<><>::uid://cc63mmrr5qfbb::::res://assets/spritesheet.png<>res://Project/Level/Level.gd<>uid://bsuydwem5t8ut::::res://Project/Player/Finn.tscn<>uid://bg0j6a4poje0e::::res://assets/ct.png<>uid://deb4xmbylgakw::::res://Project/HUD/Hud.tscn<>uid://c7c8nogigmm5a::::res://assets/ct2.png<>res://Project/Level/TileMap2.gd<>uid://bh1lmjbufo73v::::res://Project/GameOver/GameOver.tscn
 TileMap2.gd::GDScript::-1::1697491910::0::1::::<>TileMap<>::
 ::res://Project/LevelButton/::1697463684
 LevelButton.gd::GDScript::-1::1697417316::0::1::::<>NinePatchRect<>::
 LevelButton.tres::LabelSettings::4365394297179020363::1697463684::0::1::::<><>::uid://c2p3y3r42i6gh
 LevelButton.tscn::PackedScene::7185790761754889241::1697463475::0::1::::<><>::uid://cjwbdp2le2q6
-::res://Project/Main/::1697463476
-Main.gd::GDScript::-1::1697417132::0::1::::<>CanvasLayer<>::
+::res://Project/Main/::1697807243
+Main.gd::GDScript::-1::1697807113::0::1::::<>CanvasLayer<>::
 Main.tres::LabelSettings::7992049657434737882::1697415979::0::1::::<><>::uid://bko16f8c141b2
-Main.tscn::PackedScene::1598450223260505752::1697463476::0::1::::<><>::res://Project/Main/Main.gd<>uid://dlc37446gxmem
+Main.tscn::PackedScene::1598450223260505752::1697807243::0::1::::<><>::res://Project/Main/Main.gd<>uid://dlc37446gxmem::::res://assets/Gray.png<>uid://dl4n5jcu3i4da::::res://Project/Main/Main.tres
 ::res://Project/Player/::1697408625
 Finn.tscn::PackedScene::3692571151746010935::1697408625::0::1::::<><>::uid://dqobcfrgg5jve
 Fox.tscn::PackedScene::6005734167397186085::1697408625::0::1::::<><>::uid://6gvnpvtetpke
-::res://Project/Singletons/::1697494691
+::res://Project/Singletons/::1697806933
 GameData.gd::GDScript::-1::1697206531::0::1::::<>Node<>::
 GameManager.gd::GDScript::-1::1697465681::0::1::::<>Node<>::
 SignalManager.gd::GDScript::-1::1697413676::0::1::::<>Node<>::
-SoundManager.gd::GDScript::-1::1697494691::0::1::::<>Node<>::
+SoundManager.gd::GDScript::-1::1697806933::0::1::::<>Node<>::
 ::res://Project/Target/::1697408625
 Target.tscn::PackedScene::6538965122612613518::1697408625::0::1::::<><>::uid://bl4fh42whck4w

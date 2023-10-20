@@ -21,6 +21,7 @@ SignalManager="*res://Project/Singletons/SignalManager.gd"
 GameManager="*res://Project/Singletons/GameManager.gd"
 GameData="*res://Project/Singletons/GameData.gd"
 SoundManager="*res://Project/Singletons/SoundManager.gd"
+ScoreSync="*res://Project/Singletons/ScoreSync.gd"
 
 [display]
 

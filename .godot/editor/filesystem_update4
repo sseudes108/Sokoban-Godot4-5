@@ -1,6 +1,5 @@
 res://Project/Level/level.tscn
-res://Project/Singletons/SoundManager.gd
+res://Project/Singletons/ScoreSync.gd
+res://Project/Level/Level.gd
 res://Project/GameOver/GameOver.tscn
 res://Project/Main/Main.tscn
-res://Project/Main/Main.gd
-res://Project/Level/Level.gd

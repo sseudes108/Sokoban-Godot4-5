@@ -114,8 +114,10 @@ func CheckGameState():
 	for i in tileMap.get_used_cells(TARGET_LAYER):
 		if cellIsBox(i) == false:
 			return
+			
 	gameOverUi.show()
 	hud.hide()
+	ScoreSync.LevelCompleted(GameManager.GetSelectedLevel(),movesMade)
 
 func MoveBox(boxTile: Vector2i, direction: Vector2i):
 	var dest = boxTile + direction
