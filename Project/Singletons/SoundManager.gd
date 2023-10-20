@@ -5,10 +5,10 @@ const MUSIC2 = "2"
 const MUSIC3 = "3"
 const MUSIC4 = "4"
 const MUSIC5 = "5"
-#const MUSIC6 = "6"
-#const MUSIC7 = "7"
-#const MUSIC8 = "8"
-#const MUSIC9 = "9"
+const MUSIC6 = "6"
+const MUSIC7 = "7"
+const MUSIC8 = "8"
+const MUSIC9 = "9"
 #const MUSIC10 = "10"
 #const MUSIC11 = "11"
 #const MUSIC12 = "12"
@@ -19,6 +19,10 @@ const SOUNDS = {
 	MUSIC3: preload("res://assets/Custom Assets/Music/in-the-city.ogg"),
 	MUSIC4: preload("res://assets/Custom Assets/Music/mahali-pazuri.ogg"),
 	MUSIC5: preload("res://assets/Custom Assets/Music/not-in-vain.ogg"),
+	MUSIC6: preload("res://assets/Custom Assets/Music/underground-town.ogg"),
+	MUSIC7: preload("res://assets/Custom Assets/Music/vibrant.ogg"),
+	MUSIC8: preload("res://assets/Custom Assets/Music/a-farming-we-will-go.ogg"),
+	MUSIC9: preload("res://assets/Custom Assets/Music/first-story.ogg"),
 	
 	###################################################################
 	#MUSIC1: preload("res://assets/Custom Assets/Music/Pixel 1.ogg"),

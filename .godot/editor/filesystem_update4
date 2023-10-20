@@ -1,6 +1,6 @@
-res://Project/GameOver/GameOver.tscn
 res://Project/Level/level.tscn
-res://Project/HUD/Hud.gd
+res://Project/Singletons/SoundManager.gd
+res://Project/GameOver/GameOver.tscn
+res://Project/Main/Main.tscn
+res://Project/Main/Main.gd
 res://Project/Level/Level.gd
-res://Project/HUD/Hud.tscn
-res://Project/GameOver/GameOver.gd

@@ -49,7 +49,6 @@ func _ready():
 	var musicToPlay = SoundManager.SOUNDS.keys().pick_random()
 	SoundManager.PlaySound(sound, musicToPlay)
 	##########################################################
-	
 	SetUpLevel()
 
 func _process(delta):
@@ -77,6 +76,8 @@ func _process(delta):
 	
 	if Input.is_action_just_pressed("reload"):
 		movesMade = 0
+		gameOverUi.hide()
+		hud.show()
 		##Remove Custom Tiles before setup the lvl again
 		for ct in customTargets.get_children():
 			ct.queue_free()

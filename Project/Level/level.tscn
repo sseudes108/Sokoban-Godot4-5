@@ -191,6 +191,7 @@ zoom = Vector2(1.99, 1.99)
 [node name="HUD" parent="CanvasLayer" instance=ExtResource("4_kmxdh")]
 
 [node name="GameOverUI" parent="CanvasLayer" instance=ExtResource("8_vob5l")]
+visible = false
 
 [node name="Sound" type="AudioStreamPlayer" parent="."]
 volume_db = -10.0

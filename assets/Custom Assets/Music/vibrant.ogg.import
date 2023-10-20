@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b5pdgig0rxfr2"
+path="res://.godot/imported/vibrant.ogg-846841251e65b4c70c3b39e48d7c0479.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Custom Assets/Music/vibrant.ogg"
+dest_files=["res://.godot/imported/vibrant.ogg-846841251e65b4c70c3b39e48d7c0479.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

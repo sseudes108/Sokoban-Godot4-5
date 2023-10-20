@@ -1,3 +1,4 @@
+AudioStreamPlayer
 Control
 MarginContainer
 Label
@@ -5,7 +6,6 @@ VBoxContainer
 NinePatchRect
 GridContainer
 TextureRect
-AudioStreamPlayer
 TileMap
 CanvasLayer
 HBoxContainer

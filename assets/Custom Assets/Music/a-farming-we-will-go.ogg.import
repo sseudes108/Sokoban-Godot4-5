@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c7eheltthcwvh"
+path="res://.godot/imported/a-farming-we-will-go.ogg-073376fa0825e1f9b851d0d83e60f03b.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Custom Assets/Music/a-farming-we-will-go.ogg"
+dest_files=["res://.godot/imported/a-farming-we-will-go.ogg-073376fa0825e1f9b851d0d83e60f03b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
