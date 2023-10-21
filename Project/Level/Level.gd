@@ -75,9 +75,8 @@ func _process(delta):
 		direction = Vector2i.DOWN
 	
 	if Input.is_action_just_pressed("reload"):
-		movesMade = 0
-		gameOverUi.hide()
-		hud.show()
+		#gameOverUi.hide()
+		#hud.show()
 		##Remove Custom Tiles before setup the lvl again
 		for ct in customTargets.get_children():
 			ct.queue_free()
@@ -115,8 +114,8 @@ func CheckGameState():
 		if cellIsBox(i) == false:
 			return
 			
-	gameOverUi.show()
 	hud.hide()
+	gameOverUi.GameOver(GameManager.GetSelectedLevel(),movesMade)
 	ScoreSync.LevelCompleted(GameManager.GetSelectedLevel(),movesMade)
 
 func MoveBox(boxTile: Vector2i, direction: Vector2i):
@@ -217,6 +216,9 @@ func SetUpLevel():
 	var levelTiles = levelData.tiles
 	var playerStart = levelData.player_start
 	
+	movesMade = 0
+	#hud.show()
+	
 	for layerName in LAYER_MAP.keys():
 		AddLayerTiles(levelTiles[layerName], layerName)
 	
@@ -225,7 +227,8 @@ func SetUpLevel():
 	SetCustomTargets()
 	#############################
 	MoveCamera()
-	hud.SetLevelNumber(lvlNum)
+	hud.NewGame(lvlNum)
+	gameOverUi.NewGame()
 
 func MoveCamera():
 	#Used tile rectangle

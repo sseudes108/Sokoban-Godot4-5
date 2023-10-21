@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://bh1lmjbufo73v"]
+[gd_scene load_steps=9 format=3 uid="uid://bh1lmjbufo73v"]
 
 [ext_resource type="Texture2D" uid="uid://bsc8uaouup4f4" path="res://assets/Purple.png" id="1_8g535"]
 [ext_resource type="Script" path="res://Project/GameOver/GameOver.gd" id="1_mdg7q"]
@@ -24,6 +24,13 @@ font = ExtResource("3_ocpd2")
 font_size = 42
 font_color = Color(0.815686, 0.192157, 0.211765, 1)
 outline_size = 18
+outline_color = Color(0.00392157, 0.054902, 0.109804, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_is3rr"]
+font = ExtResource("3_ocpd2")
+font_size = 27
+font_color = Color(0.882353, 0.901961, 0.894118, 1)
+outline_size = 9
 outline_color = Color(0.00392157, 0.054902, 0.109804, 1)
 
 [node name="GameOverUI" type="Control"]
@@ -113,3 +120,10 @@ vertical_alignment = 1
 [node name="Spacer3" type="Control" parent="MarginContainer/NinePatchRect/MC Texts/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="MarginContainer/NinePatchRect/MC Texts/VBoxContainer"]
+layout_mode = 2
+text = "Press \"R\" to try again or \"Q\" to Select another level"
+label_settings = SubResource("LabelSettings_is3rr")
+horizontal_alignment = 1
+vertical_alignment = 1

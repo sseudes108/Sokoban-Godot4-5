@@ -1,5 +1,8 @@
-res://Project/Level/level.tscn
-res://Project/Singletons/ScoreSync.gd
-res://Project/Level/Level.gd
 res://Project/GameOver/GameOver.tscn
+res://Project/GameOver/GameOver.gd
+res://Project/Level/Level.gd
+res://Project/HUD/Hud.tscn
+res://Project/HUD/Hud.gd
 res://Project/Main/Main.tscn
+res://Project/LevelButton/LevelButton.tscn
+res://Project/LevelButton/LevelButton.gd

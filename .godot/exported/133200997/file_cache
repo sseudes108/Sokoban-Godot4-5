@@ -1,0 +1,11 @@
+res://Project/GameOver/GameOver.tscn::78a5bfe973f879779b7692ca23ef7278::1697898110::res://.godot/exported/133200997/export-59717b6a324f8e020d313a24e8279b93-GameOver.scn
+res://Project/HUD/HUD.tres::541db400ccce9cf4f0a36810d8a5a744::1697463886::res://.godot/exported/133200997/export-99c1b5fee46a575b470b9646c5c7bd63-HUD.res
+res://Project/HUD/Hud.tscn::7c6db431a6a69b765dfd3924d756054b::1697897514::res://.godot/exported/133200997/export-26d23dc5a6e2b095f2ddeca6a546308a-Hud.scn
+res://Project/Level/level.tscn::25ac32e496e1799d0bdc64f61d845c7d::1697836302::res://.godot/exported/133200997/export-8408199497557d2f29a61c454acd2b5f-level.scn
+res://Project/LevelButton/LevelButton.tres::77d1cd7a4a765dad67c2fef34af7680d::1697463684::res://.godot/exported/133200997/export-1a0a0d61f11fd7e4e9d16dd2f17a7599-LevelButton.res
+res://Project/LevelButton/LevelButton.tscn::42f2bafdaf4cfdb323f553651dccca88::1697897514::res://.godot/exported/133200997/export-f6a3d36c4b6016bcb64facd8ae0bdb75-LevelButton.scn
+res://Project/Main/Main.tres::49ad37dc12d26abc2b623c1c825a7c64::1697415979::res://.godot/exported/133200997/export-759b2ce9c266def7942fa9b3002673ec-Main.res
+res://Project/Main/Main.tscn::ac006dc021b4076066da09f0f7f776b9::1697897514::res://.godot/exported/133200997/export-74deb05874bef634538df01d104d581f-Main.scn
+res://Project/Player/Finn.tscn::40aef6d0447c8222b8c1f52d52420020::1697408625::res://.godot/exported/133200997/export-315b6e3c36fca9bdae17d6e8e634029b-Finn.scn
+res://Project/Player/Fox.tscn::e37da731055e9e0bf937604469fca1e5::1697408625::res://.godot/exported/133200997/export-bf23229aa737c957163a7eb5ab53293b-Fox.scn
+res://Project/Target/Target.tscn::d4fb760fb36bc4fd40fafa5e6332f4ff::1697408625::res://.godot/exported/133200997/export-4a3fa7152484917838dfe925fbba1c3e-Target.scn

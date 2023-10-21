@@ -21,11 +21,17 @@ func _ready():
 func _process(delta):
 	pass
 
-func SetLevelNumber(levelNumber: String):
-	levelNumberLabel.text = levelNumber
-
 func SetMovesMade(moves: int):
 	movesNumberLabel.text = str(moves)
 
 func SetBest(best: int):
 	bestNumberLabel.text = str(best)
+
+func SetLevelNumber(levelNumber: String):
+	levelNumberLabel.text = levelNumber
+
+func NewGame(level: String):
+	SetBest(ScoreSync.GetLevelBestScore(level))
+	#SetMovesMade(0)
+	SetLevelNumber(level)
+	show()

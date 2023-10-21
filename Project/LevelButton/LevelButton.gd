@@ -10,6 +10,8 @@ var levelNumber: String = "42"
 func _ready():
 	SetLevelNumber(levelNumber)
 	levelLabel.text = levelNumber
+	if ScoreSync.HasLevelBestScore(levelNumber) == true:
+		checkmark.show()
 
 func _process(delta):
 	pass
